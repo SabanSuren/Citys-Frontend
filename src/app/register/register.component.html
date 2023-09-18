@@ -1,0 +1,41 @@
+<form [formGroup]="registerForm" (ngSubmit)="register()" class="form-register">
+  <h2 class="mt-5">Kayit Ol</h2>
+  <div class="form-group">
+    <input type="text" id="userName" name="userName" formControlName="userName" class="form-control" placeholder="Kullanici Adi:" autofocus>
+    <span class="help-block" *ngIf="registerForm.get('userName')?.hasError('required') && registerForm.get('userName')?.touched ">
+      Kullanici Adi Gerekli
+    </span>
+  </div>
+
+  <div class="form-group">
+  <input type="password" id="password" name="password" formControlName="password" class="form-control" placeholder="Şifre">
+  <span class="help-block" *ngIf="registerForm.get('password')?.hasError('required') && registerForm.get('password')?.touched ">
+    Şifre Alani Gerekli
+  </span>
+
+  <span class="help-block" *ngIf="registerForm.get('password')?.hasError('minlength') && registerForm.get('password')?.touched ">
+    Şifre en az 4 Karakter Olmalidir
+  </span>
+
+  <span class="help-block" *ngIf="registerForm.get('password')?.hasError('maxlength') && registerForm.get('password')?.touched ">
+   Şifre En çok 16 Karakter Olmalidir
+  </span>
+</div>
+
+<div class="form-group">
+  <input type="password" id="confirmPassword" name="confirmPassword" formControlName="confirmPassword" class="form-control" placeholder="Şifre">
+  <span class="help-block" *ngIf="registerForm.get('confirmPassword')?.touched && registerForm.hasError('mismatch')">
+
+    Şifre Doğrulama Gerekli
+  </span>
+  <span class="help-block" *ngIf="registerForm.get('confirmPassword')?.touched && registerForm.hasError('mismatch')">Şifreler Uyumsuz</span>
+
+</div>
+
+<button class="btn btn-lg btn-primary btn-block" [disabled]="!registerForm.valid"   type="submit">Kayit Ol</button>
+
+
+
+</form>
+
+

@@ -1,0 +1,43 @@
+/* Form container */
+.form-register {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  /* Form headings */
+  .form-register h2 {
+    margin-top: 5px;
+  }
+  
+  /* Form input fields */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Error message styles */
+  .help-block {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Submit button */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

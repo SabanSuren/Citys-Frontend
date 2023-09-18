@@ -1,0 +1,48 @@
+/* Ana içerik alanı */
+main {
+    padding: 20px;
+  }
+  
+  /* Form konteyneri */
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Form başlığı */
+  h2 {
+    margin-top: 3px;
+    padding-top: 3px;
+  }
+  
+  /* Form giriş alanları */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Hata mesajı stilleri */
+  .help-block {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* Gönder düğmesi */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
